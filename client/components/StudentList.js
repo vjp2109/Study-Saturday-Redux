@@ -12,6 +12,7 @@ class StudentList extends React.Component {
     this.props.loadStudents();
   }
 
+   //Look at the Link syntax below V. IT IS IMPORTANT FOR THE LINK to work!
   render() {
     return (
       <ul>
@@ -20,6 +21,7 @@ class StudentList extends React.Component {
             <div>
               <p>Name: {student.fullName}</p>
               <p>Email: {student.email}</p>
+              <Link to={`/students/${student.id}`}>View Detail</Link>
             </div>
           </li>
         ))}
