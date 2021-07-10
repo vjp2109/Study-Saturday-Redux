@@ -16,7 +16,7 @@ const gotStudents = (students) => ({
 
 
 // THUNK CREATORS go here:
-//This where we make the axios call to the database.
+//This where we make the axios call to the database. Don't forget to export it.
 export const fetchStudents = () => async (dispatch) => {
   const {data} = await axios.get('/api/students');
   dispatch(gotStudents(data));
