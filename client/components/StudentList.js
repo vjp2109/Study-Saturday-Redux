@@ -1,6 +1,7 @@
 import React from 'react';
 import {fetchStudents} from '../redux/store';
 import {connect} from 'react-redux'
+//Nigga you need to import Link LOL I just tried to do it without it and the console straight up told me its needed. Fuck the lil red squiggly.
 import {Link} from 'react-router-dom'
 
 class StudentList extends React.Component {
